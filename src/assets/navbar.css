@@ -1,0 +1,50 @@
+@import "tailwindcss"; 
+
+
+.navigation-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 1.0rem; 
+  justify-content: left;
+  align-items: center; 
+  height: 75px;
+  width: 100%; 
+  background-color: #0F0F0F;
+  padding: 10px;
+}
+
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 50%;
+  height: 55px;
+  gap: 2.0rem;
+  padding: 10px;
+  /*border: 1px solid white; */
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 55px;
+  gap: 0.5rem;
+  /*border: 1px solid white; */
+}
+
+
+.search-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 55px;
+  gap: 0.5rem;
+  /*border: 1px solid white; */
+}
