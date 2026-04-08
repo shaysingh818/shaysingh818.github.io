@@ -1,6 +1,8 @@
-@import url("navbar.css");
 @import url("grid.css"); 
 @import "tailwindcss";
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 
 
 @tailwind base;
@@ -13,98 +15,18 @@ html, body {
   background-color: rgb(41 37 36); /* Replace with your desired color */
 }
 
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10%;
+  flex-direction: column;
+  gap: 1.0rem; 
+}
+
+
 .main {
   margin-bottom: 100px; 
-}
-
-
-.hero-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1.0rem; 
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  width: 100%;
-  background-color: #0F0F0F;
-}
-
-.hero-section-profile {
-  display: flex;
-  height: 450px;
-  width: 50%;
-  border: 1px solid white;
-  align-items: center; 
-  justify-content: center;
-  gap: 1.0rem; 
-}
-
-.hero-profile-container {
-  display: flex; 
-  align-items: center; 
-  justify-content: center;
-  flex-direction: column;
-  gap: 1.0rem;
-  width: 50%;
-}
-
-
-.hero-profile-pic {
-  display: flex;
-  align-items: center; 
-  height: 350px;
-  width: 350px;
-  background: url("pfp.jpeg");
-  border-radius: 50%;
-  backround-repeat: no-repeat;
-  background-size: cover; 
-  justify-content: center; 
-}
-
-
-.hero-profile-text {
-  display: flex;
-  align-items: center; 
-  height: 100px;
-  width: 100%;
-  /*border: 1px solid white; */
-  justify-content: center; 
-}
-
-.interests-header { 
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-  padding: 20px; 
-}
-
-.interests-container {
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 100px; 
-}
-
-
-/* interest card component */
-.interests-card {
-  display: flex; 
-  height: 350px; 
-  width: 350px;
-  align-items: flex-end; 
-  justify-content: center; 
-  background-color: black;
-  border-radius: 3%;
-  border: 1px solid white; 
-}
-
-.interest-card-container {
-  display: flex;
-  flex-direction: row;
-  margin: 20px; 
-  border: 1px solid white;
-  width: 90%; 
-  height: 90%; 
 }
 
 

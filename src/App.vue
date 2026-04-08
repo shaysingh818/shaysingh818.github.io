@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import NavigationBar from "./components/NavigationBar.vue";
-import { audioStore } from "./api/AudioFile";
+import NavigationBar from "./components/shared/NavigationBar.vue";
 
 </script>
 
