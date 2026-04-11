@@ -1,0 +1,150 @@
+[
+  {
+    "title": "Software Engineer",
+    "company": "Principal Financial Group",
+    "timeStatus": "Full-time",
+    "fromDate": "May 2022",
+    "toDate": "Present",
+    "imageUrl": "/images/principalfinancialgroup_logo.jpeg",
+    "subPositions": [
+      {
+        "title": "Software Engineer 3",
+        "fromDate": "March 2026",
+        "toDate": "Present",
+        "descriptions": [
+          "Establishing success measurment metrics for enterprise data foundation with dashboards and visualization",
+          "Developed guidance around semantic views and agentic AI for querying data in natural language text"
+        ]
+      },
+      {
+        "title": "Software Engineer 2",
+        "fromDate": "March 2024",
+        "toDate": "March 2026",
+        "descriptions": [ 
+          "Developing enterprise CICD patterns, scalable ingestion frameworks, and standardized data product management workflows - accelerating delivery for 250+ data products across multiple data domains"
+        ]
+      },
+      {
+        "title": "Software Engineer 1",
+        "fromDate": "July 2023",
+        "toDate": "March 2024",
+        "descriptions": [ 
+          "Developed an automated entitlement system for the Enterprise Data Foundation’s role based access platform; built an API gateway on AWS to process and secure 1000+ daily access requests from data producers and consumers"
+        ]
+      },
+      {
+        "title": "Data Engineer Intern",
+        "fromDate": "May 2022",
+        "toDate": "July 2023",
+        "descriptions": [
+          "Designed and implemented data pipelines for fixed-income trading, enabling custom portfolio strategy execution — driving $7K–$10K in weekly returns for the trading desk."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Coding Instructor",
+    "company": "The Coder School",
+    "timeStatus": "Part Time",
+    "fromDate": "January 2021",
+    "toDate": "May 2025",
+    "imageUrl": "/images/tcs-logo.jpeg",
+    "subPositions": [
+      {
+        "title": "Technical Interviewer",
+        "fromDate": "May 2023",
+        "toDate": "January 2025",
+        "descriptions": [
+          "Developed framework for interviewing coding instructors, performed technical interviews to evaluate potential candidates."
+        ]
+      },
+      {
+        "title": "Code Coach",
+        "fromDate": "January 2021",
+        "toDate": "May 2023",
+        "descriptions": [
+          "Employed as a Programming instructor to teach languages such as Python, HTML/CSS/JS, Scratch. Worked with frameworks such as Minecraft Education Edition, Flask and P5js.",
+          "Developed custom projects to help children understand object and data oriented programming concepts. Worked with students on their personal projects and ideas.",
+          "Contributed and refactored projects on the Coder School App Gallery ."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Preceptor",
+    "company": "Univeristy of Hartford",
+    "timeStatus": "Part Time",
+    "fromDate": "January 2022",
+    "toDate": "May 2022",
+    "imageUrl": "/images/university_of_hartford_logo.jpeg",
+    "subPositions": [
+      {
+        "title": "Programming Language Course Preceptor",
+        "fromDate": "January 2022",
+        "toDate": "May 2022",
+        "descriptions": [
+          "Preceptor/Teaching assistant for an Introductory python course. Attended classes and helped students with their programming assignments and labs. Held office hours outside of class to help students understand programming concepts needed for lecture.",
+          "Assisted professor with leaving feedback on programming assignments."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "SOC Analyst",
+    "company": "Otis Elevator Co.",
+    "timeStatus": "Full Time",
+    "fromDate": "May 2021",
+    "toDate": "December 2021",
+    "imageUrl": "/images/otis-logo.jpeg",
+    "subPositions": [
+      {
+        "title": "Intern",
+        "fromDate": "January 2022",
+        "toDate": "May 2022",
+        "descriptions": [
+          "Investigated and performed event triage using CrowdStrike, Devo and ThreatConnect. Developed a Python script to automate Symantec endpoint migration. Performed a Gap analysis for security footprint migrations.",
+          "Assisted cyber metrics team, measured incident response time to evaluate efficiency of security operations center. Discovered outdated versions of windows to prevent security exploits.",
+          "Developed an automated messaging system for intern digital technology data-thon. Solution provided real time customer communication between mechanic and operations branch manager for elevator repairs."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Online Tutor",
+    "company": "Varsity Tutors",
+    "timeStatus": "Part Time",
+    "fromDate": "November 2020",
+    "toDate": "April 2021",
+    "imageUrl": "/images/varsity_tutors_logo.jpeg",
+    "subPositions": [
+      {
+        "title": "Computer Science Tutor",
+        "fromDate": "November 2020",
+        "toDate": "April 2021",
+        "descriptions": [
+          "Established relationships with clients in need of a long term tutor for their kids/colleagues. Assisting students with Computer Science Assignments/Homework in these languages/frameworks/concepts: Python (Django/Flask), C/C++, Dart/Flutter, GoLang."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Saya Life",
+    "timeStatus": "Part Time",
+    "fromDate": "July 2020",
+    "toDate": "January 2021",
+    "imageUrl": "/images/sayalife_logo.jpeg",
+    "subPositions": [
+      {
+        "title": "Intern",
+        "fromDate": "July 2020",
+        "toDate": "January 2021",
+        "descriptions": [
+          "Developed a property billing module with tier water rate calculation.  Scaled the billing database to work domestically.",
+          "Developed a micro service for propagating  sub meter reports to the cloud.  Utilized Go-Lang and it's concurrency patterns to speed up reporting.",
+          "Developed a new UI concept for the Saya mobile app using the Flutter SDK"
+        ]
+      }
+    ]
+  }
+]

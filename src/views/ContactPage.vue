@@ -1,9 +1,24 @@
 <template>
-  <div class="page-container"> 
+  <div class="page-container">
+
       <Hero
         title="Skills & Technology"
         imageHeroItem="/images/skills_tech.jpg"
       />
+
+      <div class="career-section">
+
+        <h1> Career Positions </h1>
+
+        <CareerPosition
+          v-for="job in jobs"
+          :key="job.company"
+          :position="job"
+        />
+
+        
+
+      </div>
 
   </div>
 
@@ -13,20 +28,22 @@
 
 <script setup>
 import Hero from "../components/career/Hero.vue";
+import CareerPosition from "../components/career/CareerPosition.vue";
+import jobs from '@/data/career-positions.json'
 </script>
 
 
 <style>
 
 
-.projects-section {
+.career-section {
   display: flex;
   flex-direction: column;
   justify-content: center; 
   align-items: center;
   padding: 10px;
   gap: 1.0rem;
-  width: 100%; 
+  width: 100%;
 }
 
 .projects-list {
@@ -42,7 +59,7 @@ import Hero from "../components/career/Hero.vue";
 
 h1 {
   color: white;
-  font-size: 20px; 
+  font-size: 25px; 
 }
 
 
