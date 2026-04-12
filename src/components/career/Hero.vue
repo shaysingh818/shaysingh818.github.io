@@ -41,6 +41,10 @@
     
 </template>
 
+<script setup>
+import Skills from './Skills.vue'; 
+</script>
+
 <script>
 export default {
   name: 'Hero',
