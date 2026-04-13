@@ -75,4 +75,37 @@ export default {
 p {
   font-size: 15px; 
 }
+
+
+/* laptop */ 
+@media (max-width: 992px) {
+
+  .blog-post-grid {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* tablet */ 
+@media (max-width: 768px) {
+
+  .blog-post-grid {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* mobile */ 
+@media (max-width: 660px) {
+
+  .blog-post-grid {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
 </style>

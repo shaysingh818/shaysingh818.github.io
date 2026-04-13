@@ -82,6 +82,17 @@ h1 {
 }
 
 
+/* tablet */ 
+@media (max-width: 768px) {
+
+  .interests-grid {
+    width: 100%; 
+    height: auto; 
+    padding: 10px; 
+  }
+
+}
+
 @media (max-width: 480px) {
 
 

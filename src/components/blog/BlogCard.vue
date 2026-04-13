@@ -96,10 +96,11 @@ export default {
 }
 
 .blog-title {
-  text-wrap: wrap;
   padding: 5px;
   height: 40px;
-  overflow-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid white; 
 }
 
 h1 {

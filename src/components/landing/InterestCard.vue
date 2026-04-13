@@ -79,6 +79,26 @@ p {
 }
 
 
+@media (max-width: 992px) {
+
+  .interest-card {
+    width: 100%; 
+    height: auto; 
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .interest-card {
+    width: 100%; 
+    height: auto; 
+  }
+
+}
+
+
 @media (max-width: 480px) {
 
 

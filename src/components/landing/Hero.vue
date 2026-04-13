@@ -155,6 +155,57 @@ p {
   font-weight: none; 
 }
 
+
+/* laptop */ 
+@media (max-width: 992px) {
+
+  .hero-section-profile {
+    height: 65%;
+    width: 50%;
+  }
+
+
+  .hero-profile-pic {
+    display: flex;
+    align-items: center; 
+    height: 175px;
+    width: 175px;
+    background: url("/images/pfp.jpeg");
+    border-radius: 10%;
+    backround-repeat: no-repeat;
+    background-size: cover; 
+    justify-content: center; 
+  }
+
+}
+
+
+/* tablet */ 
+@media (max-width: 768px) {
+
+
+  .hero-section-profile {
+    height: 65%;
+    width: 50%;
+  }
+
+
+  .hero-profile-pic {
+    display: flex;
+    align-items: center; 
+    height: 175px;
+    width: 175px;
+    background: url("/images/pfp.jpeg");
+    border-radius: 10%;
+    backround-repeat: no-repeat;
+    background-size: cover; 
+    justify-content: center; 
+  }
+
+
+}
+
+
 @media (max-width: 480px) {
 
   .hero-section {
