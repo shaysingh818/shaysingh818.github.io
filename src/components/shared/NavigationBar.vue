@@ -223,6 +223,7 @@ const menuOpen = ref(false);
 
 <script>
 export default {
+  name: 'NavigationBar',
   methods: {
     goToHome() {
       this.$router.push('/');
