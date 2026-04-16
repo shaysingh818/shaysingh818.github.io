@@ -1,0 +1,1 @@
+const t="post2",n="AI in the junior developer era: Learn nothing but know everything",e="/images/SWE.jpg",o=["software","content","AI"],a="Shay Singh",s="04/11/2026",i={prefix:t,title:n,thumbnail:e,tags:o,author:a,modifyDate:s};export{a as author,i as default,s as modifyDate,t as prefix,o as tags,e as thumbnail,n as title};

@@ -1,0 +1,1 @@
+const t="post3",o="How I got kicked out of college",e="/images/college.webp",s=["college","life","bad decisions"],a="Shay Singh",c="04/11/2026",i={prefix:t,title:o,thumbnail:e,tags:s,author:a,modifyDate:c};export{a as author,i as default,c as modifyDate,t as prefix,s as tags,e as thumbnail,o as title};
