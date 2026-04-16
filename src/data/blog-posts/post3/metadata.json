@@ -1,7 +1,8 @@
 {
+  "prefix": "post3",
   "title": "How I got kicked out of college",
-  "thumbnail": "images/blog.jpeg",
-  "tags": ["software", "content", "AI"],
+  "thumbnail": "/images/college.webp",
+  "tags": ["college", "life", "bad decisions"],
   "author": "Shay Singh",
   "modifyDate": "04/11/2026"
 }

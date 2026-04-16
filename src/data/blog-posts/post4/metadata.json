@@ -1,7 +1,8 @@
 {
-  "title": "The market for software that helps with active recall",
-  "thumbnail": "images/blog.jpeg",
-  "tags": ["software", "content", "AI"],
+  "prefix": "post4",
+  "title": "The market for software that helps with active recall memorization",
+  "thumbnail": "/images/flashcards.jpeg",
+  "tags": ["software", "active recall", "market research"],
   "author": "Shay Singh",
   "modifyDate": "04/11/2026"
 }

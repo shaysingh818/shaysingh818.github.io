@@ -1,6 +1,7 @@
 {
+  "prefix": "post2", 
   "title": "AI in the junior developer era: Learn nothing but know everything",
-  "thumbnail": "images/blog.jpeg",
+  "thumbnail": "/images/SWE.jpg",
   "tags": ["software", "content", "AI"],
   "author": "Shay Singh",
   "modifyDate": "04/11/2026"

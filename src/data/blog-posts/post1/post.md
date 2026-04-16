@@ -1,7 +1,38 @@
-# Project Tier Evaluation
+## Problem
+ 
+Memorization and active recall of information is required for professions such as medicine, law & general educational environments for learning. Current active recall software in the market is either hidden behind egregious paywalls, free but dated user interface designs, lack of active recall customization techniques or requires you storing your study material on the platforms servers.
 
-| Tier Level | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Tier 1** | Solves a problem that's never been solved before and no existing work/competing products.<br><br>Project can be applied to a domain that is in a high impact area like healthcare, energy, infrastructure, agriculture.<br><br>Specific target audience and maintainer would find the project useful and would be willing to give valuable feedback to make it better. User growth would be feasible.<br><br>Long term maintenance would be mandatory since there would be active users depending on the project.                                                                                                                |
-| **Tier 2** | Solves a problem that's been solved before, but aims to solve the problem in a unique way with a different perspective. <br><br>Project can be applied to a domain that is in a high impact area like healthcare, energy, infrastructure, agriculture, education.<br><br>Specific target audience and maintainer would find the project useful and would be willing to give valuable feedback to make it better. User growth would be desirable but project could need rework to make it more market competitive.<br><br>Long term maintenance would be required based on how much user growth and maintainer interest there is. |
-| **Tier 3** | Solves a problem that's been solved before, or aims to create a experience without a problem in mind. Usually cloning or recreating solution and preferring tradeoffs of owning our own solution. <br><br>Project is in a domain that's low impact, mainly for utilities/productivity applications and building for the sake of learning<br><br>Chance of having a target audience is very low and the audience would be mainly the maintainer of the project.<br><br>Long term maintenance is optional since the project is only being used by the maintainer.                                                                  |
+Memorization and active recall of information is required for professions such as medicine, law & general educational environments for learning. Current active recall software in the market is either hidden behind egregious paywalls, free but dated user interface designs, lack of active recall customization techniques or requires you storing your study material on the platforms servers.
+
+## Uniqueness
+
+* What will make this project unique is mainly the themes for data ownership, analytics & tracking, hosting and local collaboration, active recall technique customization.
+* **Data ownership**: Data is stored with the user (local first), study sets, decks will never be required to be stored on a central server. 
+* **Analytics & tracking**: Analytics on local and shared decks will be insightful and allow users to create their own metrics (long term vision). The more data the user stores, the more opportunity for optimization and machine learning. 
+* **Hosting and local collaboration**: While data is stored locally with the user, users can host their own study sessions on a local network, other users with the app can study interactively together without cloud/central authority enforcement.
+* **Recall Technique Creation**: A variety of recall techniques like matching, ordered sequencing, multiple choice, text similarity searching for open ended questions will be added.
+
+## Minimal Viable Product
+
+* Recall flashcard techniques for text similarity, matching, multiple choice, fill in all correct answers, ordered sequences. 
+* Categorization of subject, unit, then sections within a unit for organization of study material. 
+* Fully local, device & data sharing on local networks
+* Local hosting for hosting interactive study sessions with groups
+
+## Long Term Maintenance
+
+* As much time needed to get MVP up and running
+* We will use the app for studying anatomy and keep touching it up til it's effective
+
+## Audience 
+
+* We will use the app for studying anatomy and keep touching it up til it's effective
+* Educators/Teachers
+* Nursing/Med students
+* Legal professionals studying in law school 
+
+## Metrics For Success
+
+* Number of users
+* Amount of storage saved/compressed for study decks
+* Time-to-first-study-session: barrier of entry for an average non technical user

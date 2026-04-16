@@ -1,6 +1,7 @@
 {
+  "prefix": "post1",
   "title": "Evaulating impact for software projects",
-  "thumbnail": "/images/blog.jpeg",
+  "thumbnail": "/images/software.jpg",
   "tags": ["software", "projects", "documentation"],
   "author": "Shay Singh",
   "modifyDate": "04/11/2026"

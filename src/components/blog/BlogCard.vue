@@ -1,5 +1,5 @@
 <template>
-  <div class="blog-card">
+  <div class="blog-card" @click="blogDetail">
 
     <div class="blog-image" :style="{ backgroundImage: `url(${obj.thumbnail})`}">
       
@@ -18,9 +18,9 @@
 
     <div class="blog-footer">
 
-        <p1 :style="{ fontWeight: 'bold'}"> By: {{ obj.author }} </p1> 
+        <p :style="{ fontWeight: 'bold'}"> By: {{ obj.author }} </p> 
 
-        <p1> Last Modified: {{ obj.modifyDate }} </p1> 
+        <p> Last Modified: {{ obj.modifyDate }} </p> 
 
     </div>
 
@@ -39,6 +39,11 @@ export default {
       type: Object,
       required: true
     }
+  },
+  methods: {
+    async blogDetail() {
+      this.$router.push({path: `/blog-detail/${this.obj.prefix}`});
+    }
   }
 }
 </script>
@@ -51,7 +56,7 @@ export default {
   justify-content: center; 
   align-items: center;
   background-color: #403E3E;
-  height: 200px;
+  height: 220px;
   border-radius: 10px;
 }
 
@@ -67,14 +72,14 @@ export default {
 }
 
 .blog-info {
-  height: 100%; 
+  height: 75%; 
   display: flex; 
   flex-direction: column;
   justify-content: center; 
   align-items: stretch;
   padding: 5px;
   flex-wrap: wrap;
-  gap: 0.5rem; 
+  gap: 0.5rem;
 }
 
 .blog-tags {
@@ -100,15 +105,15 @@ export default {
   height: 40px;
   overflow: hidden;
   text-overflow: ellipsis;
-  border: 1px solid white; 
 }
 
 h1 {
   font-size: 12px; 
 }
 
-p1 {
-  font-size: 10px;
+p {
+  font-size: 12px;
+  font-weight: normal; 
 }
 
 </style>

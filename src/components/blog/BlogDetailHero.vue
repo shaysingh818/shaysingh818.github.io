@@ -1,4 +1,3 @@
-
 <template> 
     <div class="hero-section">
       <div class="image-hero-section">
@@ -12,8 +11,14 @@
       <div class="hero-section-profile">
 
         <div class="hero-profile-text">
-          <h1> {{ title }} </h1>
-          <p> {{ description }} </p> 
+
+          <div class="post-title">
+            <h1> {{ title }} </h1>
+          </div>
+
+          <div class="post-tags">
+            <Badge v-for="(tag, index) in tags" :key="index" :title="tag" />  
+          </div>
         </div>
 
       </div>
@@ -21,21 +26,25 @@
     
 </template>
 
+<script setup>
+import Badge from "../shared/Badge.vue"; 
+</script>
+
 
 <script>
 export default {
-  name: 'Hero',
+  name: 'BlogDetailHero',
   props: {
     title: {
       type: String,
       required: true
     },
-    description: {
+    imageHeroItem: {
       type: String,
       required: true
     },
-    imageHeroItem: {
-      type: String,
+    tags: {
+      type: Array,
       required: true
     },
   }
@@ -76,18 +85,6 @@ export default {
   width: 50%;
 }
 
-.hero-profile-pic {
-  display: flex;
-  align-items: center; 
-  height: 200px;
-  width: 200px;
-  background: url("/images/pfp.jpeg");
-  border-radius: 10%;
-  backround-repeat: no-repeat;
-  background-size: cover; 
-  justify-content: center; 
-}
-
 .hero-profile-text {
   display: flex;
   flex-direction: column;
@@ -121,6 +118,18 @@ export default {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.6); /* increase 0.4 to make it darker */
+}
+
+.post-title {
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+.post-tags {
+  display: flex; 
+  flex-direction: row; 
+  gap: 0.5rem; 
+  padding: 10px;
 }
 
 p {

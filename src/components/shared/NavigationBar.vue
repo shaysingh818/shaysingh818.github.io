@@ -26,21 +26,29 @@
 
     <div class="contact-section">
       <div>
-        <LinkedinIcon class="linkedin-icon" />
+        <a href="https://www.linkedin.com/in/shalin-singh-5b881a19a/">
+          <LinkedinIcon class="linkedin-icon" />
+        </a>
       </div>
 
       <div>
-        <GitHubIcon /> 
+        <a href="https://github.com/shaysingh818">
+          <GitHubIcon />
+        </a>
       </div>
 
       <div>
-        <DiscordIcon /> 
+        <a href="https://discord.com/users/730771068075114547">
+          <DiscordIcon />
+        </a>
       </div>
     </div>
 
-    <div class="overlay" v-if="menuOpen" @click="menuOpen = false" />
 
   </div>
+
+
+  <div class="overlay" v-if="menuOpen" @click="menuOpen = false" />
 
 </template>
 

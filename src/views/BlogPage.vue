@@ -3,7 +3,7 @@
 
       <Hero
         title="Blog Posts"
-        description="Writing about my life, analysis of current events, interesting problems to solve and much more."
+        description="Blog posts about life, and learning along the way"
         imageHeroItem="/images/blog.jpeg"
       />
 
@@ -65,7 +65,7 @@ export default {
 
 .blog-post-grid {
   display: grid; 
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   width: 75%;
   height: 100%; 
