@@ -1,1 +1,0 @@
-const t="post4",a="The market for software that helps with active recall memorization",e="/images/flashcards.jpeg",s=["software","active recall","market research"],o="Shay Singh",r="04/11/2026",c={prefix:t,title:a,thumbnail:e,tags:s,author:o,modifyDate:r};export{o as author,c as default,r as modifyDate,t as prefix,s as tags,e as thumbnail,a as title};

@@ -1,1 +1,0 @@
-const t="post1",o="Evaulating impact for software projects",a="/images/software.jpg",s=["software","projects","documentation"],e="Shay Singh",n="04/11/2026",c={prefix:t,title:o,thumbnail:a,tags:s,author:e,modifyDate:n};export{e as author,c as default,n as modifyDate,t as prefix,s as tags,a as thumbnail,o as title};

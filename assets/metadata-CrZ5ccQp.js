@@ -1,0 +1,1 @@
+const o="philosphy-on-deep-work",t="Personal philosophy of focus with deep work",s="/images/focus.webp",e=["software","content","AI"],a="Shay Singh",n="04/11/2026",c={prefix:o,title:t,thumbnail:s,tags:e,author:a,modifyDate:n};export{a as author,c as default,n as modifyDate,o as prefix,e as tags,s as thumbnail,t as title};

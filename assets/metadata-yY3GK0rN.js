@@ -1,1 +1,0 @@
-const t="post6",a="The perks of being naturally terrible at something",n="/images/mountainclimb.jpg",o=["software","content","AI"],e="Shay Singh",s="04/11/2026",i={prefix:t,title:a,thumbnail:n,tags:o,author:e,modifyDate:s};export{e as author,i as default,s as modifyDate,t as prefix,o as tags,n as thumbnail,a as title};

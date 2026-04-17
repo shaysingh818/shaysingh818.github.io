@@ -1,0 +1,1 @@
+const t="market-for-active-recall-software",a="The market for software that helps with active recall memorization",e="/images/flashcards.jpeg",r=["software","active recall","market research"],o="Shay Singh",s="04/16/2026",c={prefix:t,title:a,thumbnail:e,tags:r,author:o,modifyDate:s};export{o as author,c as default,s as modifyDate,t as prefix,r as tags,e as thumbnail,a as title};
