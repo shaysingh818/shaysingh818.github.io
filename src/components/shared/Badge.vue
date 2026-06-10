@@ -23,17 +23,17 @@ export default {
 <style scoped>
 
 .badge {
-  border-radius: 5px; 
-  background-color: #F05F5F;
-  padding: 2px;
+  border-radius: 5px;
+  background-color: #7c6af7;
+  padding: 3px;
   white-space: nowrap;
   flex-shrink: 0; 
 }
 
 
 p {
-  font-weight: normal;
-  font-size: 10px; 
+  font-weight: bold;
+  font-size: 9px;
 }
 
 </style>

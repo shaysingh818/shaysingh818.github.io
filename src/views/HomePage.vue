@@ -2,37 +2,21 @@
 
     <div class="page-container">
 
+    
       <Hero
         title="Shay Singh"
         description="Building, Breaking & Learning"
         imageHeroItem1="/images/muay-thai.webp"
         imageHeroItem2="/images/SWE.jpg"
         imageHeroItem3="/images/anatomy.jpg"
-      />
+        /> 
 
 
       <div class="interests-section">
-        <h1> Interests </h1>
+        <h1> Featured Projects </h1>
 
         <div class="interests-grid">
 
-          <InterestCard
-            title="Martial Arts"
-            description="Avid combat sports enthusiast & practioner. Currently training Muay Thai"
-            :icon="BoxingGloveIcon"
-          />
-         
-          <InterestCard
-            title="Software Engineering"
-            description="Working in financial services, hobbiest in graph theory, web development and algorithm research related to healthcare"
-            :icon="CodeIcon"
-          />
-
-          <InterestCard
-            title="Healthcare"
-            description="Interested in applications of technology to healthcare & geriatric care"
-            :icon="HealthcareIcon"
-          />
 
         </div>
         

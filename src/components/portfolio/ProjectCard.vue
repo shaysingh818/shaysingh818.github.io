@@ -73,7 +73,7 @@ import Badge from "../shared/Badge.vue";
   width: 100%;
   padding: 15px;
   height: 180px;
-  background-color: #403E3E;
+  background-color: #27272f;
   border-radius: 10px; 
 }
 

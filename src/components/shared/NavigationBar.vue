@@ -18,9 +18,10 @@
         <p>Career</p>
       </div>
 
-      <div @click="goToBlog">
-        <p>Blog</p>
+      <div @click="goToContact">
+        <p>Services</p>
       </div>
+
     </div>
 
 
@@ -61,10 +62,11 @@
   gap: 0.5rem; 
   justify-content: left;
   align-items: center; 
-  height: 75px;
+  height: 45px;
   width: 100%; 
   padding: 10px;
-  z-index: 100; 
+  z-index: 100;
+  background-color: #16161a;
 }
 
 
@@ -75,7 +77,7 @@
   align-items: center;
   height: 55px;
   gap: 2.0rem;
-  padding: 25px;
+  width: 20%; 
 }
 
 .logo-section {
@@ -85,7 +87,8 @@
   align-items: center;
   height: 55px;
   gap: 0.5rem;
-  padding: 20px; 
+  padding: 20px;
+  width: 15%;  
 }
 
 
@@ -95,14 +98,15 @@
   margin-left: auto; 
   justify-content: center;
   align-items: center;
-  height: 55px;
-  gap: 1.0rem;
-  padding: 20px; 
+  height: 100%;
+  gap: 1.2rem;
+  padding: 20px;
+  width: 15%; 
 }
 
 .contact-section svg {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 .linkedin-icon {
@@ -111,16 +115,16 @@
 
 
 h1 {
-  color: #F05F5F;
-  font-size: 20px;
+  color:  #7c6af7;
+  font-size: 15px;
   font-weight: bold;
   font-family: 'Inter', sans-serif; 
 }
 
 
 p {
-  font-size: 15px;
-  color: white;
+  font-size: 11px;
+  color: #e8e8f0 ;
   font-weight: bold; 
   font-family: 'Inter', sans-serif; 
 }

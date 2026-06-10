@@ -2,18 +2,6 @@
     <div class="hero-section">
       <div class="image-hero-section">
 
-        <div class="image-hero-item" :style="{ backgroundImage: `url(${imageHeroItem1})` }" >
-
-        </div>
-
-          <div class="image-hero-item" :style="{ backgroundImage: `url(${imageHeroItem2})` }" >
-
-        </div>
-
-            <div class="image-hero-item" :style="{ backgroundImage: `url(${imageHeroItem3})` }" >
-
-        </div>
-
       </div> 
 
       <div class="hero-section-profile">
@@ -74,20 +62,20 @@ export default {
   align-items: center;
   height: 400px;
   width: 100%;
-  background-color: #0F0F0F;
-  z-index: 1; 
+  background-color: #1e1e24; 
 }
 
 
 .hero-section-profile {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   position: absolute; 
   justify-content: center;
   height: 75%;
   width: 50%;
   gap: 0.5rem;
+  padding: 10px;
 }
 
 
@@ -95,31 +83,31 @@ export default {
   display: flex; 
   align-items: center; 
   justify-content: center;
-  flex-direction: column;
-  gap: 1.0rem;
+  flex-direction: row;
   width: 50%;
 }
 
 .hero-profile-pic {
   display: flex;
   align-items: center; 
-  height: 200px;
-  width: 200px;
+  height: 275px;
+  width: 50%;
   background: url("/images/pfp.jpeg");
   border-radius: 10%;
   backround-repeat: no-repeat;
   background-size: cover; 
-  justify-content: center; 
+  justify-content: center;
 }
 
 .hero-profile-text {
   display: flex;
   flex-direction: column;
-  text-align: center; 
-  align-items: center; 
-  height: 100px;
-  width: 100%;
-  justify-content: center; 
+  text-align: left; 
+  align-items: left; 
+  height: auto;
+  width:  75%;
+  justify-content: center;
+  padding: 10px; 
 }
 
 .image-hero-section {
