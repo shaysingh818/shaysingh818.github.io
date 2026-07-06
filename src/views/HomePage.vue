@@ -1,63 +1,52 @@
 <template>
-
     <div class="page-container">
-
+    
       <Hero
         title="Shay Singh"
-        description="Building, Breaking & Learning"
+        description="Software developer with 4+ years of experience. Currently working in financial services. Interested in applications of technology to healthcare, graph theory, and desktop application development."
         imageHeroItem1="/images/muay-thai.webp"
         imageHeroItem2="/images/SWE.jpg"
         imageHeroItem3="/images/anatomy.jpg"
-      />
-
-
+        /> 
       <div class="interests-section">
-        <h1> Interests </h1>
-
+        <h1> Featured Projects </h1>
         <div class="interests-grid">
-
-          <InterestCard
-            title="Martial Arts"
-            description="Avid combat sports enthusiast & practioner. Currently training Muay Thai"
-            :icon="BoxingGloveIcon"
+          <ProjectCardV2
+              title="DTunes"
+              description="Pomodoro focus timer with background audio player, Personal tool developed to aid with focus. Developed using the Tauri desktop framework, cross platform and open source."
+              imageUrl="/images/dtunes.png"
+              projectLink="https://shaysingh818.github.io/DTunes/"
+              :badges="['rust', 'tauri', 'typescript', 'audio']"
           />
-         
-          <InterestCard
-            title="Software Engineering"
-            description="Working in financial services, hobbiest in graph theory, web development and algorithm research related to healthcare"
-            :icon="CodeIcon"
+          <ProjectCardV2
+              title="Dendritic"
+              description="Lightweight and extensible optimization library. Includes first order optimization with multi variate/vector valued functions."
+              imageUrl="/images/dendritic.png"
+              projectLink="https://crates.io/crates/dendritic"
+              :badges="['rust', 'optimization', 'ndarray', 'autodiff']"
           />
-
-          <InterestCard
-            title="Healthcare"
-            description="Interested in applications of technology to healthcare & geriatric care"
-            :icon="HealthcareIcon"
+          <ProjectCardV2
+              title="Neurograph"
+              description="A graph theory data suite for creating extensible interfaces for graph conversion and network analysis"
+              imageUrl="/images/neurograph.png"
+              projectLink="https://shaysingh818.github.io/neurograph/"
+              :badges="['rust', 'graph theory', 'algorithms']"
           />
-
         </div>
         
       </div>
-
     </div>
    
-
-    
 </template>
-
 <script setup>
 import Hero from "../components/landing/Hero.vue";
+import ProjectCardV2 from "../components/portfolio/ProjectCardV2.vue";
 import InterestCard from "../components/landing/InterestCard.vue";
 import HealthcareIcon from "@/assets/icons/healthcare2.svg"
 import CodeIcon from "@/assets/icons/code.svg"
 import BoxingGloveIcon from "@/assets/icons/boxing.svg"; 
 </script>
-
 <style scoped>
-
-.body {
-  bottom: 20px; 
-}
-
 .interests-section {
   display: flex;
   flex-direction: column;
@@ -66,57 +55,26 @@ import BoxingGloveIcon from "@/assets/icons/boxing.svg";
   padding: 10px;
   gap: 1.0rem; 
 }
-
 .interests-grid {
   display: flex; 
   flex-direction: row; 
+  flex-wrap: wrap;
   justify-content: center; 
   align-items: stretch;
-  gap: 1.0rem;
-  height: 250px;  
+  gap: 1.5rem;
 }
-
 h1 {
   color: white;
-  font-size: 20px; 
+  font-size: 30px; 
 }
-
-
-/* tablet */ 
-@media (max-width: 768px) {
-
-  .interests-grid {
-    width: 100%; 
-    height: auto; 
-    padding: 10px; 
-  }
-
-}
-
 @media (max-width: 480px) {
-
+  .interests-grid {
+    flex-direction: column;
+    gap: 1.0rem;
+  }
 
   .interests-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    padding: 10px;
-    gap: 1.0rem;
+    padding: 30px; 
   }
-
-  .interests-grid {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: stretch;
-    gap: 1.0rem;
-    width: 250px; 
-    height: auto; 
-  }
-
 }
-
-
 </style>
-

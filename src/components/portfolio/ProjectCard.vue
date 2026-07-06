@@ -7,12 +7,11 @@
       <div class="project-detail-section">
 
         <h1> {{ title }} </h1>
+        <p> {{ description }} </p> 
 
         <div class="project-badge-section">
             <Badge v-for="(item, index) in badges" :key="index" :title="item" />
         </div>
-
-        <p> {{ description }} </p> 
 
       </div> 
 
@@ -71,23 +70,21 @@ import Badge from "../shared/Badge.vue";
   align-items: flex-start;
   gap: 1rem; 
   width: 100%;
-  padding: 15px;
   height: 180px;
-  background-color: #403E3E;
+  background-color: #27272f;
   border-radius: 10px; 
 }
 
 
 .project-thumbnail {
-  width: 150px;
+  width: 200px;
   flex-shrink: 0;
   apsect-ratio: 16/9; 
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-right: auto;
-  border-radius: 10%;
+  border-radius: 10px;
 }
 
 
@@ -97,7 +94,8 @@ import Badge from "../shared/Badge.vue";
   flex-direction: column;
   justify-content: start;
   align-items: left;
-  gap: 0.5rem; 
+  gap: 0.5rem;
+  padding: 10px; 
 }
 
 
@@ -130,10 +128,9 @@ p {
     align-items: center;
     gap: 1rem; 
     width: 100%;
-    padding: 15px;
     height: auto;
-    background-color: #403E3E;
-    border-radius: 10px; 
+    border-radius: 10px;
+    background-color: #27272f;
   }
 
   .project-thumbnail {
