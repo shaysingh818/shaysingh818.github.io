@@ -52,173 +52,103 @@ export default {
 </script>
 
 <style scoped>
-
 .hero-section {
   display: flex;
-  position: relative; 
-  flex-direction: column;
-  gap: 1.0rem; 
+  position: relative;
   justify-content: center;
   align-items: center;
   height: 400px;
   width: 100%;
-  background-color: #1e1e24; 
+  background-color: #1e1e24;
 }
-
 
 .hero-section-profile {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: absolute; 
   justify-content: center;
-  height: 75%;
   width: 50%;
   gap: 0.5rem;
   padding: 10px;
 }
 
-
-.hero-profile-container {
-  display: flex; 
-  align-items: center; 
-  justify-content: center;
-  flex-direction: row;
-  width: 50%;
-}
-
 .hero-profile-pic {
-  display: flex;
-  align-items: center; 
-  height: 275px;
-  width: 50%;
+  flex-shrink: 0;
+  height: 300px;
+  width: 300px;
   background: url("/images/pfp.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 10%;
-  backround-repeat: no-repeat;
-  background-size: cover; 
-  justify-content: center;
 }
 
 .hero-profile-text {
   display: flex;
   flex-direction: column;
-  text-align: left; 
-  align-items: left; 
-  height: auto;
-  width:  75%;
   justify-content: center;
-  padding: 10px; 
-}
-
-.image-hero-section {
-  position: absolute; 
-  display: flex; 
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
-}
-
-.image-hero-item {
-  position: relative; 
-  display: flex; 
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.image-hero-item::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6); /* increase 0.4 to make it darker */
+  align-items: flex-start;
+  text-align: left;
+  padding: 10px;
 }
 
 h1 {
-  color: white; 
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 p {
-  font-weight: none; 
+  font-size: 15px;
+  font-weight: normal;
 }
 
-
-/* laptop */ 
+/* laptop */
 @media (max-width: 992px) {
-
   .hero-section-profile {
-    height: 65%;
-    width: 50%;
+    width: 75%;
+    border: 1px solid white; 
   }
-
-
   .hero-profile-pic {
-    display: flex;
-    align-items: center; 
     height: 175px;
     width: 175px;
-    background: url("/images/pfp.jpeg");
-    border-radius: 10%;
-    backround-repeat: no-repeat;
-    background-size: cover; 
-    justify-content: center; 
   }
-
 }
 
-
-/* tablet */ 
+/* tablet */
 @media (max-width: 768px) {
-
-
   .hero-section-profile {
-    height: 65%;
-    width: 50%;
+    width: 75%;
+  }
+  .hero-profile-pic {
+    height: 175px;
+    width: 175px;
+  }
+}
+
+@media (max-width: 660px) {
+  .hero-section {
+    height: 500px;
+    background-color: #1e1e24;
+    flex-direction: column;
+  }
+  .hero-section-profile {
+    width: 100%;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+  }
+
+  .hero-profile-text {
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
   }
 
 
   .hero-profile-pic {
-    display: flex;
-    align-items: center; 
-    height: 175px;
-    width: 175px;
-    background: url("/images/pfp.jpeg");
-    border-radius: 10%;
-    backround-repeat: no-repeat;
-    background-size: cover; 
-    justify-content: center; 
+    height: 300px;
+    width: 300px;
   }
-
-
 }
-
-
-@media (max-width: 480px) {
-
-  .hero-section {
-    display: flex;
-    position: relative; 
-    flex-direction: column;
-    gap: 1.0rem; 
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    width: 100%;
-    background-color: #0F0F0F;
-    z-index: 1;
-    top: 0;   
-  }
-
-
-  .image-hero-section {
-    position: absolute; 
-    display: flex; 
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-  }
-
-}
-
 </style>
+

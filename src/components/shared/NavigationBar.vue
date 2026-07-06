@@ -62,7 +62,7 @@
   gap: 0.5rem; 
   justify-content: left;
   align-items: center; 
-  height: 45px;
+  height: 60px;
   width: 100%; 
   padding: 10px;
   z-index: 100;
