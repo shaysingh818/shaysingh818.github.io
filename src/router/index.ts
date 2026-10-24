@@ -29,8 +29,8 @@ const router = createRouter({
       component: BlogDetail,
     },
     {
-      path: '/contact',
-      name: 'contact',
+      path: '/career',
+      name: 'career',
       component: ContactPage,
     },
   ],

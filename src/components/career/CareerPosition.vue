@@ -131,7 +131,7 @@ p1 {
 p2 {
   font-size: 10px;
   font-weight: normal;
-  color: #C3BCBC; 
+  color: var(--app-color-text-muted); 
 }
 
 ul {

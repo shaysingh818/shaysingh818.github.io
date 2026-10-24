@@ -52,7 +52,7 @@ export default {
   align-items: center;
   height: 250px;
   width: 100%;
-  background-color: #0F0F0F;
+  background-color: var(--app-color-surface-sunken);
   z-index: 1; 
 }
 

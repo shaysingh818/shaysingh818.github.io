@@ -55,7 +55,7 @@ export default {
   flex-direction: column;
   justify-content: center; 
   align-items: center;
-  background-color: #403E3E;
+  background-color: var(--app-color-surface-raised);
   height: 220px;
   border-radius: 10px;
 }

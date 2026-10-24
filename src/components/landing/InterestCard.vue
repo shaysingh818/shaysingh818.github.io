@@ -42,7 +42,7 @@ export default {
   justify-content: center; 
   align-items: center;
   padding: 10px;
-  background-color: #403E3E;
+  background-color: var(--app-color-surface-raised);
   width: 20%;
   height: 100%;  
   border-radius: 5px;
@@ -64,7 +64,7 @@ export default {
 } 
 
 svg {
-  fill: #F05F5F;
+  fill: var(--app-color-accent);
 }
 
 
@@ -108,7 +108,7 @@ p {
     justify-content: center; 
     align-items: center;
     padding: 10px;
-    background-color: #403E3E;
+    background-color: var(--app-color-surface-raised);
     width: 100%;
     height: 20%;  
     border-radius: 5px;

@@ -24,7 +24,7 @@ export default {
 
 .badge {
   border-radius: 5px; 
-  background-color: #F05F5F;
+  background-color: var(--app-color-accent);
   padding: 2px;
   white-space: nowrap;
   flex-shrink: 0; 
