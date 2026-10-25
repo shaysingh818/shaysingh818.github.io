@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faChartBar } from "@fortawesome/free-regular-svg-icons";
 import { faDiagramProject, faBriefcase, faShieldHalved } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faDiscord, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import SiteFooter from "./components/shared/SiteFooter.vue";
 
 </script>
 
@@ -72,9 +73,22 @@ import { faGithub, faDiscord, faLinkedin } from "@fortawesome/free-brands-svg-ic
   <main>
     <RouterView />
   </main>
+
+  <SiteFooter />
 </template>
 
 <style>
+
+/* push the footer to the bottom on short pages */
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#app > main {
+  flex: 1;
+}
 
 .site-header {
   position: sticky; 

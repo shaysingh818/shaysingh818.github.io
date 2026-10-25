@@ -9,18 +9,19 @@
         imageHeroItem2="/images/SWE.jpg"
         imageHeroItem3="/images/anatomy.jpg"
       />
-
+      <About /> 
       <FeaturedProjects /> 
+      <FeaturedBooks />
 
     </div>
-   
-
-    
+  
 </template>
 
 <script setup>
 import Hero from "../components/landing/Hero.vue";
 import FeaturedProjects from "../components/portfolio/FeaturedProjects.vue";
+import About from "../components/landing/About.vue"; 
+import FeaturedBooks from "../components/blog/FeaturedBooks.vue";
 </script>
 
 <style scoped>
@@ -28,18 +29,6 @@ import FeaturedProjects from "../components/portfolio/FeaturedProjects.vue";
 .body {
   bottom: 20px; 
 }
-
-.interests-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center;
-  padding: 10px;
-  gap: 1.0rem; 
-}
-
-
-
 
 
 </style>

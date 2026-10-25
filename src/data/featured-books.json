@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Sample Book One",
+    "author": "Author Name",
+    "cover": "/images/blog.jpeg"
+  },
+  {
+    "title": "Sample Book Two",
+    "author": "Author Name",
+    "cover": "/images/blog.jpeg"
+  },
+  {
+    "title": "Sample Book Three",
+    "author": "Author Name",
+    "cover": "/images/blog.jpeg"
+  },
+  {
+    "title": "Sample Book Four",
+    "author": "Author Name",
+    "cover": "/images/blog.jpeg"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Neurograph",
+    "thumbnail": "/images/neurograph.png",
+    "tags": ["software", "AI"],
+    "description": "Placeholder: a short one or two sentence summary of what this project does and why it matters."
+  },
+  {
+    "title": "dtunes",
+    "thumbnail": "/images/dtunes.png",
+    "tags": ["software"],
+    "description": "Placeholder: a short one or two sentence summary of what this project does and why it matters."
+  },
+  {
+    "title": "Dendritic",
+    "thumbnail": "/images/dendritic.png",
+    "tags": ["software"],
+    "description": "Placeholder: a short one or two sentence summary of what this project does and why it matters."
+  }
+]

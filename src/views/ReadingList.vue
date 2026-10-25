@@ -7,12 +7,6 @@
         imageHeroItem="/images/blog.jpeg"
       />
 
-      <div class="blog-section">
-        <h1> Latest Posts </h1> 
-        <div class="blog-post-grid">
-          <BlogCard v-for="post in posts" :key="post.title" :obj="post" /> 
-          </div> 
-      </div>
 
   </div>
 </template>
@@ -22,7 +16,6 @@
 <script>
 import { ref } from 'vue';
 import Hero from "../components/blog/Hero.vue";
-import BlogCard from "../components/blog/BlogCard.vue";
 
 
 export default {

@@ -115,7 +115,7 @@ export default {
   width: 200px;
   background: url("/images/pfp.jpeg");
   border-radius: 10%;
-  backround-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover; 
   justify-content: center; 
 }

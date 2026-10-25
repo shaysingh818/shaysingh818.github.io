@@ -68,26 +68,22 @@ import Badge from "../shared/Badge.vue";
 
 .project-card {
   display: flex;
-  align-items: flex-start;
-  gap: 1rem; 
+  align-items: stretch;
   width: 100%;
-  padding: 15px;
   height: 180px;
+  border: 1px solid var(--app-color-border);
   background-color: var(--app-color-surface-raised);
   border-radius: 10px; 
+  overflow: hidden;
 }
 
 
 .project-thumbnail {
-  width: 150px;
+  width: 220px;
   flex-shrink: 0;
-  apsect-ratio: 16/9; 
-  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-right: auto;
-  border-radius: 10%;
 }
 
 
@@ -98,6 +94,7 @@ import Badge from "../shared/Badge.vue";
   justify-content: start;
   align-items: left;
   gap: 0.5rem; 
+  padding: 15px;
 }
 
 
@@ -127,23 +124,13 @@ p {
   .project-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem; 
-    width: 100%;
-    padding: 15px;
+    align-items: stretch;
     height: auto;
-    background-color: var(--app-color-surface-raised);
-    border-radius: 10px; 
   }
 
   .project-thumbnail {
     width: 100%;
     height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-right: auto;
-    border-radius: 10px;
   }
 
 
