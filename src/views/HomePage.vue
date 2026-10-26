@@ -21,7 +21,7 @@
 import Hero from "../components/landing/Hero.vue";
 import FeaturedProjects from "../components/portfolio/FeaturedProjects.vue";
 import About from "../components/landing/About.vue"; 
-import FeaturedBooks from "../components/blog/FeaturedBooks.vue";
+import FeaturedBooks from "../components/reading-list/FeaturedBooks.vue";
 </script>
 
 <style scoped>
