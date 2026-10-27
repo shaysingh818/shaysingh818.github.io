@@ -1,49 +1,31 @@
 <template>
   <div class="page-container"> 
+
       <Hero
         title="Software Portfolio"
         description="We are our projects - Sarte"
-        imageHeroItem="/images/projects.jpg"
+        imageHeroItem1="/images/projects_banner/DTUNES.png"
+        imageHeroItem2="/images/projects_banner/DENDRITIC.png"
+        imageHeroItem3="/images/projects_banner/FLASHI.png"
       />
 
       <div class="projects-section">
 
-        <h1> Projects </h1> 
+        <div class="projects-header">
+          <h1> Projects </h1>
+          <p> These are the projects I build in my free time. Most of them are written in Rust. They cover numerical optimization and automatic differentiation, graph theory and network analysis, and data infrastructure for large-scale analytics on healthcare, public government and crime data. I also build small cross-platform desktop tools that help with my own focus and productivity. </p>
+        </div>
 
         <div class="projects-list">
-
           <ProjectCard
-              title="DTunes"
-              description="Pomodoro focus timer with background audio player, Personal tool developed to aid with focus. Developed using the Tauri desktop framework, cross platform and open source."
-              imageUrl="/images/dtunes.png"
-              projectLink="https://shaysingh818.github.io/DTunes/"
-              :badges="['rust', 'tauri', 'typescript', 'audio']"
+              v-for="(project, index) in projects"
+              :key="index"
+              :title="project.title"
+              :description="project.description"
+              :imageUrl="project.imageUrl"
+              :projectLink="project.projectLink"
+              :badges="project.badges"
           />
-
-          <ProjectCard
-              title="Dendritic"
-              description="Lightweight and extensible optimization library. Includes first order optimization with multi variate/vector valued functions."
-              imageUrl="/images/dendritic.png"
-              projectLink="https://crates.io/crates/dendritic"
-              :badges="['rust', 'optimization', 'ndarray', 'autodiff']"
-          />
-
-          <ProjectCard
-              title="Neurograph"
-              description="A graph theory data suite for creating extensible interfaces for graph conversion and network analysis"
-              imageUrl="/images/neurograph.png"
-              projectLink="https://shaysingh818.github.io/neurograph/"
-              :badges="['rust', 'graph theory', 'algorithms']"
-          />
-
-          <ProjectCard
-              title="Data Research Labratory"
-              description="Research labratory for building data warehouses and running large scale data & analytics projects. Domains focused mainly on healthcare, public government data & crime."
-              imageUrl="/images/data-infra.png"
-              projectLink="https://propulsion-consulting.github.io/terraform-modules/"
-              :badges="['clickhouse', 'analytics', 'infrastructure']"
-          />
-
         </div>
 
 
@@ -57,13 +39,28 @@
 
 
 <script setup>
-import Hero from "../components/portfolio/Hero.vue";
+import Hero from "../components/shared/Hero.vue";
 import ProjectCard from "../components/portfolio/ProjectCard.vue"; 
+import projects from "@/data/projects.json";
 </script>
 
 
 <style>
 
+
+.projects-header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 1rem;
+  width: 50%;
+}
+
+.projects-header p {
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--app-color-text-muted);
+}
 
 .projects-section {
   display: flex;
@@ -94,7 +91,8 @@ h1 {
 
 @media (max-width: 992px) {
 
-  .projects-list {
+  .projects-list,
+  .projects-header {
     width: 75%; 
   }
 
@@ -104,7 +102,8 @@ h1 {
 /* tablet */ 
 @media (max-width: 768px) {
 
-  .projects-list {
+  .projects-list,
+  .projects-header {
     width: 75%; 
   }
 
@@ -113,7 +112,8 @@ h1 {
 
 @media (max-width: 660px) {
 
-  .projects-list {
+  .projects-list,
+  .projects-header {
     width: 100%;
   }
 

@@ -1,9 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
 import ProjectsPage from '../views/ProjectsPage.vue'
-import BlogPage from '../views/BlogPage.vue'
+import ReadingListPage from '../views/ReadingListPage.vue'
 import ContactPage from '../views/ContactPage.vue'
-import BlogDetail from '../components/blog/BlogDetail.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,19 +18,14 @@ const router = createRouter({
       component: ProjectsPage,
     },
     {
-      path: '/blog',
-      name: 'blog',
-      component: BlogPage,
-    },
-    {
-      path: '/blog-detail/:prefix',
-      name: 'blog-detail',
-      component: BlogDetail,
-    },
-    {
-      path: '/contact',
-      name: 'contact',
+      path: '/career',
+      name: 'career',
       component: ContactPage,
+    },
+    {
+      path: '/reading-list',
+      name: 'reading-list',
+      component: ReadingListPage,
     },
   ],
 })

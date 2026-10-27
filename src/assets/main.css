@@ -9,10 +9,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Obsidian dark palette */
+:root {
+  --app-color-background: #1e1e1e;
+  --app-color-surface: #262626;
+  --app-color-surface-raised: #303030;
+  --app-color-surface-sunken: #161616;
+  --app-color-text: #dadada;
+  --app-color-text-muted: #b3b3b3;
+  --app-color-accent: #8a5cf5;
+  --app-color-border: #363636;
+
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--app-color-text);
+  background-color: var(--app-color-background);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
 html, body {
   height: 100%;
   margin: 0;
-  background-color: rgb(41 37 36); /* Replace with your desired color */
+  background-color: var(--app-color-background);
 }
 
 .page-container {
@@ -32,12 +50,12 @@ html, body {
 
 p {
   font-size: 18px;
-  color: white;
+  color: var(--app-color-text);
   font-weight: bold; 
 }
 
 h1 {
-  color: #24BAE3;
+  color: var(--app-color-accent);
   font-size: 25px;
   font-weight: bold;
   font-family: sans-serif; 
@@ -45,16 +63,16 @@ h1 {
 
 
 h2 {
-  color: white;
+  color: var(--app-color-text);
   font-size: 35px;
   font-weight: bold;
   font-family: sans-serif;
 }
 
 input {
-  background-color: rgb(41 37 36); 
+  background-color: var(--app-color-surface); 
   border-radius: 5%; 
-  border: 1px solid white;
+  border: 1px solid var(--app-color-border);
   height: 75%;
   width: 75%; 
 }

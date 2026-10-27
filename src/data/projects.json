@@ -1,0 +1,37 @@
+[ 
+  {
+    "title": "Flashi",
+    "description": "Desktop flashcard application to help you organize knowledge into subjects, decks and study sessions. Leverage active recall to study memorization heavy subjects",
+    "imageUrl": "/images/projects_banner/FLASHI.png",
+    "projectLink": "https://shaysingh818.github.io/flashi/",
+    "badges": ["rust", "tauri", "flashcards", "education"]
+  },
+  {
+    "title": "DTunes",
+    "description": "Pomodoro focus timer with background audio player, Personal tool developed to aid with focus. Developed using the Tauri desktop framework, cross platform and open source.",
+    "imageUrl": "/images/projects_banner/DTUNES.png",
+    "projectLink": "https://shaysingh818.github.io/DTunes/",
+    "badges": ["rust", "tauri", "typescript", "audio"]
+  },
+  {
+    "title": "Dendritic",
+    "description": "Lightweight and extensible optimization library. Includes first order optimization with multi variate/vector valued functions.",
+    "imageUrl": "/images/project_thumbnails/dendritic.png",
+    "projectLink": "https://crates.io/crates/dendritic",
+    "badges": ["rust", "optimization", "ndarray", "autodiff"]
+  },
+  {
+    "title": "Web Component Library",
+    "description": "Personal web component library for creating reusable and consistent user interfaces using VueJS.",
+    "imageUrl": "/images/project_thumbnails/web-component-library.png",
+    "projectLink": "https://shaysingh818.github.io/graphyne-web-component-library",
+    "badges": ["web", "ui", "vuejs", "web components"]
+  },
+  {
+    "title": "GTD Data Mining & Predictive Modeling",
+    "description": "Data mining project I did in college using the global terrorism database. Used unsupervised and supervised machine learning algorithms to model relationships between attack groups and global terrorism events.",
+    "imageUrl": "/images/project_thumbnails/global-terrorism.png",
+    "projectLink": "https://github.com/shaysingh818/GlobalTerrorism/blob/main/paper.pdf",
+    "badges": ["python", "machine learning", "classification"]
+  }
+]

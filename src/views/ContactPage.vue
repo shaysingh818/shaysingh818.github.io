@@ -3,8 +3,29 @@
 
       <Hero
         title="Skills & Technology"
-        imageHeroItem="/images/skills_tech.jpg"
-      />
+        imageHeroItem1="/images/career_banner/IOWAMETHODIST.jpg"
+        imageHeroItem2="/images/career_banner/PRINCIPAL.avif"
+        imageHeroItem3="/images/career_banner/PC.jpeg"
+      >
+        <div class="hero-skills">
+
+          <Skills
+              title="Programming Languages"
+              :badges="['Rust', 'Python', 'Typescript', 'C', 'SQL']"
+           />
+
+          <Skills
+              title="Frameworks"
+              :badges="['Tauri', 'VueJS', 'Django', 'Flask', 'Streamlit', 'CUDA', 'Numpy', 'Pandas', 'Polars', 'Snowpark', 'Schemachange', 'DBT', 'Flyway']"
+           />
+
+          <Skills
+              title="Technologies"
+              :badges="['AWS', 'Snowflake', 'Clickhouse', 'GitHub', 'Backstage', 'Figma', 'Draw.IO']"
+           />
+
+        </div>
+      </Hero>
 
       <div class="career-section">
 
@@ -27,7 +48,8 @@
 
 
 <script setup>
-import Hero from "../components/career/Hero.vue";
+import Hero from "../components/shared/Hero.vue";
+import Skills from "../components/career/Skills.vue";
 import CareerPosition from "../components/career/CareerPosition.vue";
 import jobs from '@/data/career-positions.json'
 </script>
@@ -35,6 +57,17 @@ import jobs from '@/data/career-positions.json'
 
 <style>
 
+
+.hero-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  height: 75%;
+  width: 100%;
+  gap: 0.5rem;
+}
 
 .career-section {
   display: flex;
