@@ -105,7 +105,7 @@ export default {
   align-items: center; 
   height: 200px;
   width: 200px;
-  background: url("/images/pfp.jpeg");
+  background: url("/images/landing_banner/pfp.jpeg");
   border-radius: 10%;
   background-repeat: no-repeat;
   background-size: cover; 
@@ -170,7 +170,7 @@ p {
     align-items: center; 
     height: 175px;
     width: 175px;
-    background: url("/images/pfp.jpeg");
+    background: url("/images/landing_banner/pfp.jpeg");
     border-radius: 10%;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -195,7 +195,7 @@ p {
     align-items: center; 
     height: 175px;
     width: 175px;
-    background: url("/images/pfp.jpeg");
+    background: url("/images/landing_banner/pfp.jpeg");
     border-radius: 10%;
     background-repeat: no-repeat;
     background-size: cover; 

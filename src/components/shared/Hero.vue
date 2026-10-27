@@ -1,24 +1,35 @@
 
-<template> 
-    <div class="hero-section">
+<template>
+    <div class="hero-section" :class="{ 'has-content': $slots.default }">
       <div class="image-hero-section">
 
-        <div class="image-hero-item" :style="{ backgroundImage: `url(${imageHeroItem})` }" >
+        <div class="image-hero-item" :style="{ backgroundImage: `url(${imageHeroItem1})` }" >
 
         </div>
 
-      </div> 
+        <div class="image-hero-item" :style="{ backgroundImage: `url(${imageHeroItem2})` }" >
+
+        </div>
+
+        <div class="image-hero-item" :style="{ backgroundImage: `url(${imageHeroItem3})` }" >
+
+        </div>
+
+      </div>
 
       <div class="hero-section-profile">
 
         <div class="hero-profile-text">
-          <h1> {{ title }} </h1> 
-          <p> {{ description }}  </p> 
+          <h1> {{ title }} </h1>
+          <p v-if="description"> {{ description }}  </p>
         </div>
+
+        <!-- optional extra content rendered under the title (e.g. skills) -->
+        <slot />
 
       </div>
     </div>
-    
+
 </template>
 
 <script>
@@ -32,9 +43,17 @@ export default {
     },
     description: {
       type: String,
+      required: false
+    },
+    imageHeroItem1: {
+      type: String,
       required: true
     },
-    imageHeroItem: {
+    imageHeroItem2: {
+      type: String,
+      required: true
+    },
+    imageHeroItem3: {
       type: String,
       required: true
     },
@@ -48,15 +67,19 @@ export default {
 
 .hero-section {
   display: flex;
-  position: relative; 
+  position: relative;
   flex-direction: column;
-  gap: 1.0rem; 
+  gap: 1.0rem;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 300px;
   width: 100%;
   background-color: var(--app-color-surface-sunken);
-  z-index: 1; 
+  z-index: 1;
+}
+
+.hero-section.has-content {
+  height: 350px;
 }
 
 
@@ -64,56 +87,44 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute; 
+  position: absolute;
   justify-content: center;
   height: 75%;
   width: 50%;
   gap: 0.5rem;
 }
 
-
-.hero-profile-container {
-  display: flex; 
-  align-items: center; 
-  justify-content: center;
-  flex-direction: column;
-  gap: 1.0rem;
-  width: 50%;
+.has-content .hero-section-profile {
+  width: 60%;
 }
 
-.hero-profile-pic {
-  display: flex;
-  align-items: center; 
-  height: 200px;
-  width: 200px;
-  background: url("/images/pfp.jpeg");
-  border-radius: 10%;
-  background-repeat: no-repeat;
-  background-size: cover; 
-  justify-content: center; 
-}
 
 .hero-profile-text {
   display: flex;
   flex-direction: column;
-  text-align: center; 
-  align-items: center; 
+  text-align: center;
+  align-items: center;
   height: 100px;
   width: 100%;
-  justify-content: center; 
+  justify-content: center;
+}
+
+.has-content .hero-profile-text {
+  height: auto;
+  gap: 0.5rem;
 }
 
 .image-hero-section {
-  position: absolute; 
-  display: flex; 
+  position: absolute;
+  display: flex;
   flex-direction: row;
   width: 100%;
   height: 100%;
 }
 
 .image-hero-item {
-  position: relative; 
-  display: flex; 
+  position: relative;
+  display: flex;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -129,34 +140,56 @@ export default {
 }
 
 h1 {
-  font-size: 25px; 
-  color: white; 
+  font-size: 25px;
+  color: white;
 }
 
 p {
-  font-weight: normal; 
+  font-weight: normal;
 }
+
+@media (max-width: 768px) {
+
+  .has-content .hero-section-profile {
+    width: 75%;
+  }
+
+}
+
+
+@media (max-width: 660px) {
+
+  .hero-section.has-content {
+    height: 400px;
+  }
+
+  .has-content .image-hero-section {
+    flex-direction: column;
+  }
+
+}
+
 
 @media (max-width: 480px) {
 
   .hero-section {
     display: flex;
-    position: relative; 
+    position: relative;
     flex-direction: column;
-    gap: 1.0rem; 
+    gap: 1.0rem;
     justify-content: center;
     align-items: center;
     height: 300px;
     width: 100%;
     background-color: var(--app-color-surface-sunken);
     z-index: 1;
-    top: 0;   
+    top: 0;
   }
 
 
   .image-hero-section {
-    position: absolute; 
-    display: flex; 
+    position: absolute;
+    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;

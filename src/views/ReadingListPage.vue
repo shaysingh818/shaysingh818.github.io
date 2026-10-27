@@ -1,32 +1,30 @@
 <template>
 
-  <Hero
-      title="Reading List"
-      description="A collection of all the books I've read"
-      imageHeroItem="/images/blog.jpeg"
-    />
+  <div class="page-container">
+
+    <Hero
+        title="Reading List"
+        description="A collection of all the books I've read"
+        imageHeroItem1="/images/reading_list_banner/FIREPLACE.jpg"
+        imageHeroItem2="/images/reading_list_banner/KOBOLIBRA.webp"
+        imageHeroItem3="/images/reading_list_banner/LIBRARY.jpeg"
+      />
+
+    <br /> 
 
 
-  <div class="featured-books-container">
+    <div class="featured-books-container">
 
-    <div class="featured-books">
-      <div class="flex">
-        <div class="flex-1">
-          <h1> Top Reading Picks </h1>
+      <div class="featured-books">
+        <div class="flex">
+            <h1> Top Reading Picks </h1>
         </div>
-        <div class="flex w-64">
-           <GnButton :disabled="false" variant="ghost" color="var(--app-color-accent)" @gn-click="router.push('/reading-list')">
-            <span class="view-books-label">
-              View Reading List
-              <FontAwesomeIcon :icon="faArrowRight" />
-            </span>
-          </GnButton>
+        <p> These are my top picks for books I've read. Interested in the horror, mystery and thriller genre's. Favorite authors so far are Paige Dearth, Gregg Olson and Jodi Picoult. </p>  
+        <div class="featured-books-grid">
+          <Book v-for="(book, index) in books" :key="index" :obj="book" />
         </div>
       </div>
-      <p> These are my top picks for books I've read. Interested in the horror, mystery and thriller genre's. Favorite authors so far are Paige Dearth, Gregg Olson and Jodi Picoult. </p>  
-      <div class="featured-books-grid">
-        <Book v-for="(book, index) in books" :key="index" :obj="book" />
-      </div>
+
     </div>
 
   </div>
@@ -35,8 +33,9 @@
 
 
 <script setup>
-import Book from "../components/reading-list/Book.vue"
-import books from "@/data/featured-books.json"
+import Book from "../components/reading-list/Book.vue";
+import Hero from "../components/shared/Hero.vue";
+import books from "@/data/reading-list.json";
 import { GnButton } from "@graphyne/web-components";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -57,6 +56,7 @@ const router = useRouter();
   width: 100%;
   max-width: 1120px;
   padding: 0 4.5rem;
+  justify-content: center;
 }
 
 .featured-books {

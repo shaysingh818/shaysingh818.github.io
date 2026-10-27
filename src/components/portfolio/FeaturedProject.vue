@@ -13,7 +13,7 @@
       </div>
 
       <div class="featured-project-tags">
-        <Badge v-for="(tag, index) in obj.tags" :key="index" :title="tag" />
+        <GnTag v-for="(tag, index) in obj.tags" :key="index" :label="tag" color="var(--app-color-accent)" />
       </div>
 
       <div class="featured-project-description">
@@ -28,7 +28,7 @@
 
 
 <script setup>
-import Badge from "../shared/Badge.vue";
+import { GnTag } from "@graphyne/web-components";
 
 defineProps({
   obj: {

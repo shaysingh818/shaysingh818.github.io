@@ -17,7 +17,7 @@
           </div>
 
           <div class="post-tags">
-            <Badge v-for="(tag, index) in tags" :key="index" :title="tag" />  
+            <GnTag v-for="(tag, index) in tags" :key="index" :label="tag" color="var(--app-color-accent)" />  
           </div>
         </div>
 
@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-import Badge from "../shared/Badge.vue"; 
+import { GnTag } from "@graphyne/web-components";
 </script>
 
 

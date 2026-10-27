@@ -9,7 +9,7 @@
         <h1> {{ title }} </h1>
 
         <div class="project-badge-section">
-            <Badge v-for="(item, index) in badges" :key="index" :title="item" />
+            <GnTag v-for="(item, index) in badges" :key="index" :label="item" color="var(--app-color-accent)" />
         </div>
 
         <p> {{ description }} </p> 
@@ -61,7 +61,7 @@ export default {
 </script>
 
 <script setup>
-import Badge from "../shared/Badge.vue";
+import { GnTag } from "@graphyne/web-components";
 </script>
 
 <style scoped>

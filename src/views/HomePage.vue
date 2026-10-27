@@ -5,9 +5,9 @@
       <Hero
         title="Shay Singh"
         description="Building, Breaking & Learning"
-        imageHeroItem1="/images/muay-thai.webp"
-        imageHeroItem2="/images/SWE.jpg"
-        imageHeroItem3="/images/anatomy.jpg"
+        imageHeroItem1="/images/landing_banner/muay-thai.webp"
+        imageHeroItem2="/images/landing_banner/SWE.jpg"
+        imageHeroItem3="/images/landing_banner/anatomy.jpg"
       />
       <About /> 
       <FeaturedProjects /> 

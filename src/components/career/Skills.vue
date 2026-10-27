@@ -4,7 +4,7 @@
       <h1> {{ title }}: </h1>
 
       <div class="skill-badges">
-        <Badge v-for="(item, index) in badges" :key="index" :title="item" />
+        <GnTag v-for="(item, index) in badges" :key="index" :label="item" color="var(--app-color-accent)" />
       </div>
 
     </div>
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <script setup>
-import Badge from "../shared/Badge.vue";
+import { GnTag } from "@graphyne/web-components";
 </script>
 
 <style scoped>

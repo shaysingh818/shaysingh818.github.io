@@ -2,21 +2,21 @@
   {
     "title": "Sample Book One",
     "author": "Author Name",
-    "cover": "/images/blog.jpeg"
+    "cover": "/images/book_thumbnails/believe-like-a-child.jpeg"
   },
   {
     "title": "Sample Book Two",
     "author": "Author Name",
-    "cover": "/images/blog.jpeg"
+    "cover": "/images/book_thumbnails/my-sisters-keeper.jpg"
   },
   {
     "title": "Sample Book Three",
     "author": "Author Name",
-    "cover": "/images/blog.jpeg"
+    "cover": "/images/book_thumbnails/last-thing-she-ever-did.jpg"
   },
   {
     "title": "Sample Book Four",
     "author": "Author Name",
-    "cover": "/images/blog.jpeg"
+    "cover": "/images/book_thumbnails/man-search-for-meaning.jpg"
   }
 ]
