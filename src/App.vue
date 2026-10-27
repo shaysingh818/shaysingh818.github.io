@@ -6,9 +6,12 @@ import {
 } from "@graphyne/web-components";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faChartBar } from "@fortawesome/free-regular-svg-icons";
-import { faDiagramProject, faBriefcase, faShieldHalved } from "@fortawesome/free-solid-svg-icons";
+import { faDiagramProject, faBriefcase, faShieldHalved, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faDiscord, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import SiteFooter from "./components/shared/SiteFooter.vue";
+import { ref } from "vue";
+
+const menuOpen = ref(false);
 
 </script>
 
@@ -16,7 +19,13 @@ import SiteFooter from "./components/shared/SiteFooter.vue";
 
    <header class="site-header">
      <div class="container header-inner">
-       <GnNavigationBar direction="row" backgroundColor="var(--app-color-surface)">
+       <GnNavigationBar
+         direction="row"
+         backgroundColor="var(--app-color-surface)"
+         :collapseAt="640"
+         menuLabel="Toggle navigation menu"
+         @gn-menu-toggle="menuOpen = $event"
+       >
           <template #header>
 
               <RouterLink to="/" >
@@ -24,6 +33,9 @@ import SiteFooter from "./components/shared/SiteFooter.vue";
                     <FontAwesomeIcon :icon="faShieldHalved" />
                 </GnNavigationHeader>
               </RouterLink>
+          </template>
+          <template #menu-icon>
+              <FontAwesomeIcon :icon="menuOpen ? faXmark : faBars" />
           </template>
           <template #items>
    
@@ -114,6 +126,19 @@ import SiteFooter from "./components/shared/SiteFooter.vue";
 /* more room between the logo and the title */
 .header-inner .gn-navigation-bar .gn-navigation-header {
   gap: 0.75rem;
+}
+
+/* mobile menu: lay the links and socials out as rows instead of Graphyne's default column */
+.site-header .header-inner .gn-navigation-bar--collapsed .gn-navigation-bar__items,
+.site-header .header-inner .gn-navigation-bar--collapsed .gn-navigation-bar__trailing {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-header .header-inner .gn-navigation-bar--collapsed .gn-navigation-bar__items {
+  gap: 1.5rem;
 }
 
 .container {

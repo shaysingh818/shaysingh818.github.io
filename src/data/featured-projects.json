@@ -1,13 +1,13 @@
 [
   {
-    "title": "Neurograph",
-    "thumbnail": "/images/project_thumbnails/neurograph.png",
+    "title": "Flashi",
+    "thumbnail": "/images/projects_banner/FLASHI.png",
     "tags": ["software", "AI"],
     "description": "Placeholder: a short one or two sentence summary of what this project does and why it matters."
   },
   {
-    "title": "dtunes",
-    "thumbnail": "/images/project_thumbnails/dtunes.png",
+    "title": "DTunes",
+    "thumbnail": "/images/projects_banner/DTUNES.png",
     "tags": ["software"],
     "description": "Placeholder: a short one or two sentence summary of what this project does and why it matters."
   },

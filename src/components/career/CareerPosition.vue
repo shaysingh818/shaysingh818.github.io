@@ -67,10 +67,11 @@ export default {
   gap: 0.5rem; 
   width: 100%;
   padding: 10px; 
-  height: 95px;
+  min-height: 95px;
 }
 
 .career-thumbnail {
+  flex-shrink: 0;
   width: 80px; 
   height: 80px; 
   background-size: cover;
@@ -145,10 +146,36 @@ li {
 }
 
 
+@media (max-width: 992px) {
+
+  .career-position {
+    width: 75%;
+  }
+
+}
+
+
 @media (max-width: 660px) {
 
   .career-position {
     width: 100%;
+  }
+
+  .career-thumbnail {
+    width: 56px;
+    height: 56px;
+  }
+
+  .career-detail {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+
+  p2 {
+    font-size: 11px;
   }
 
 }

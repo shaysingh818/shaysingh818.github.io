@@ -85,6 +85,13 @@ p {
   }
 }
 
+/* tablet */
+@media (max-width: 768px) {
+  .featured-books-container {
+    padding: 0 24px;
+  }
+}
+
 /* mobile: two books per row */
 @media (max-width: 480px) {
   .featured-books-container {

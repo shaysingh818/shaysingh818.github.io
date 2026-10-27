@@ -8,7 +8,7 @@
           <div class="flex-1">
             <h1> About Me </h1>
           </div>
-          <div class="flex w-64">
+          <div class="flex shrink-0 sm:w-64">
              <GnButton :disabled="false" variant="ghost" color="var(--app-color-accent)" @gn-click="router.push('/projects')">
               <span class="view-projects-label">
                 View Career
@@ -52,6 +52,24 @@ p {
   font-size: 16px;
   font-weight: normal;
   color: var(--app-color-text-muted);
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  .about-section-container {
+    padding: 0 24px;
+  }
+}
+
+/* mobile */
+@media (max-width: 480px) {
+  .about-section-container {
+    padding: 0 16px;
+  }
+
+  p {
+    font-size: 15px;
+  }
 }
 
 </style>

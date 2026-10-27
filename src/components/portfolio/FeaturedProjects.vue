@@ -7,7 +7,7 @@
         <div class="flex-1">
           <h1> Latest Projects </h1>
         </div>
-        <div class="flex w-64">
+        <div class="flex shrink-0 sm:w-64">
            <GnButton :disabled="false" variant="ghost" color="var(--app-color-accent)" @gn-click="router.push('/projects')">
             <span class="view-projects-label">
               View Projects
@@ -70,8 +70,15 @@ const router = useRouter();
   }
 }
 
+/* tablet */
+@media (max-width: 768px) {
+  .featured-projects-container {
+    padding: 0 24px;
+  }
+}
+
 /* mobile: one card per row */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .featured-projects-container {
     padding: 0 16px;
   }

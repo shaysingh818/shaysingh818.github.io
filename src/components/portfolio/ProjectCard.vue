@@ -101,6 +101,7 @@ import { GnTag } from "@graphyne/web-components";
 .project-badge-section { 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 0.5rem; 
 }
 
@@ -109,12 +110,12 @@ p {
   font-size: 13px; 
 }
 
-/* tablet */ 
+/* tablet: let long descriptions grow the card instead of clipping */
 @media (max-width: 768px) {
 
-
-  p {
-    font-size: 10px; 
+  .project-card {
+    height: auto;
+    min-height: 180px;
   }
 
 }
@@ -139,7 +140,16 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem; 
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .project-detail-section h1 {
+    font-size: 18px;
+  }
+
+  .project-badge-section {
+    justify-content: center;
   }
 
 }

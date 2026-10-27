@@ -5,9 +5,19 @@
     "cover": "/images/book_thumbnails/believe-like-a-child.jpeg"
   },
   {
+    "title": "Sample Book Four",
+    "author": "Author Name",
+    "cover": "/images/book_thumbnails/when-smiles-fade.webp"
+  },
+  {
     "title": "Sample Book Two",
     "author": "Author Name",
     "cover": "/images/book_thumbnails/my-sisters-keeper.jpg"
+  },
+  {
+    "title": "Sample Book Two",
+    "author": "Author Name",
+    "cover": "/images/book_thumbnails/a-perfect-match.jpg"
   },
   {
     "title": "Sample Book Three",
@@ -25,6 +35,11 @@
     "cover": "/images/book_thumbnails/last-thing-she-ever-did.jpg"
   },
   {
+    "title": "Sample Book Three",
+    "author": "Author Name",
+    "cover": "/images/book_thumbnails/lying-next-to-me.jpg"
+  },
+  {
     "title": "Sample Book Four",
     "author": "Author Name",
     "cover": "/images/book_thumbnails/man-search-for-meaning.jpg"
@@ -38,5 +53,10 @@
     "title": "Sample Book Four",
     "author": "Author Name",
     "cover": "/images/book_thumbnails/against-medical-advice.jpeg"
+  },
+  {
+    "title": "Sample Book Four",
+    "author": "Author Name",
+    "cover": "/images/book_thumbnails/american-predator.jpeg"
   }
 ]

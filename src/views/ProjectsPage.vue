@@ -17,39 +17,15 @@
         </div>
 
         <div class="projects-list">
-
           <ProjectCard
-              title="DTunes"
-              description="Pomodoro focus timer with background audio player, Personal tool developed to aid with focus. Developed using the Tauri desktop framework, cross platform and open source."
-              imageUrl="/images/project_thumbnails/dtunes.png"
-              projectLink="https://shaysingh818.github.io/DTunes/"
-              :badges="['rust', 'tauri', 'typescript', 'audio']"
+              v-for="(project, index) in projects"
+              :key="index"
+              :title="project.title"
+              :description="project.description"
+              :imageUrl="project.imageUrl"
+              :projectLink="project.projectLink"
+              :badges="project.badges"
           />
-
-          <ProjectCard
-              title="Dendritic"
-              description="Lightweight and extensible optimization library. Includes first order optimization with multi variate/vector valued functions."
-              imageUrl="/images/project_thumbnails/dendritic.png"
-              projectLink="https://crates.io/crates/dendritic"
-              :badges="['rust', 'optimization', 'ndarray', 'autodiff']"
-          />
-
-          <ProjectCard
-              title="Neurograph"
-              description="A graph theory data suite for creating extensible interfaces for graph conversion and network analysis"
-              imageUrl="/images/project_thumbnails/neurograph.png"
-              projectLink="https://shaysingh818.github.io/neurograph/"
-              :badges="['rust', 'graph theory', 'algorithms']"
-          />
-
-          <ProjectCard
-              title="Data Research Labratory"
-              description="Research labratory for building data warehouses and running large scale data & analytics projects. Domains focused mainly on healthcare, public government data & crime."
-              imageUrl="/images/project_thumbnails/data-infra.png"
-              projectLink="https://propulsion-consulting.github.io/terraform-modules/"
-              :badges="['clickhouse', 'analytics', 'infrastructure']"
-          />
-
         </div>
 
 
@@ -65,6 +41,7 @@
 <script setup>
 import Hero from "../components/shared/Hero.vue";
 import ProjectCard from "../components/portfolio/ProjectCard.vue"; 
+import projects from "@/data/projects.json";
 </script>
 
 

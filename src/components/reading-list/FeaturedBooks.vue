@@ -7,7 +7,7 @@
         <div class="flex-1">
           <h1> Top Reading Picks </h1>
         </div>
-        <div class="flex w-64">
+        <div class="flex shrink-0 sm:w-64">
            <GnButton :disabled="false" variant="ghost" color="var(--app-color-accent)" @gn-click="router.push('/reading-list')">
             <span class="view-books-label">
               View Reading List
@@ -75,6 +75,13 @@ p {
 @media (max-width: 1024px) {
   .featured-books-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  .featured-books-container {
+    padding: 0 24px;
   }
 }
 

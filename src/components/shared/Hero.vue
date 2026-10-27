@@ -160,11 +160,19 @@ p {
 @media (max-width: 660px) {
 
   .hero-section.has-content {
-    height: 400px;
+    height: auto;
+    min-height: 400px;
+    padding: 2rem 0;
   }
 
   .has-content .image-hero-section {
     flex-direction: column;
+  }
+
+  .has-content .hero-section-profile {
+    position: relative;
+    height: auto;
+    width: 90%;
   }
 
 }
@@ -193,6 +201,10 @@ p {
     flex-direction: column;
     width: 100%;
     height: 100%;
+  }
+
+  .hero-section-profile {
+    width: 90%;
   }
 
 }
