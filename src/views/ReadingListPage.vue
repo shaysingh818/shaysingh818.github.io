@@ -4,7 +4,7 @@
 
     <Hero
         title="Reading List"
-        description="A collection of all the books I've read"
+        description="A collection of all the books I think are good reads!"
         imageHeroItem1="/images/reading_list_banner/FIREPLACE.jpg"
         imageHeroItem2="/images/reading_list_banner/KOBOLIBRA.webp"
         imageHeroItem3="/images/reading_list_banner/LIBRARY.jpeg"
