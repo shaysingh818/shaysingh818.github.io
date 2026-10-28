@@ -2,19 +2,19 @@
   {
     "title": "Flashi",
     "thumbnail": "/images/projects_banner/FLASHI.png",
-    "tags": ["software", "AI"],
-    "description": "Placeholder: a short one or two sentence summary of what this project does and why it matters."
+    "tags": ["rust", "tauri", "flashcards", "education"],
+    "description": "Desktop flashcard application to help you organize knowledge into subjects, decks and study sessions. Leverage active recall to study memorization heavy subjects"
   },
   {
     "title": "DTunes",
     "thumbnail": "/images/projects_banner/DTUNES.png",
-    "tags": ["software"],
-    "description": "Placeholder: a short one or two sentence summary of what this project does and why it matters."
+    "tags": ["rust", "tauri", "typescript", "audio"],
+    "description": "Pomodoro focus timer with background audio player, Personal tool developed to aid with focus. Developed using the Tauri desktop framework, cross platform and open source."
   },
   {
     "title": "Dendritic",
     "thumbnail": "/images/project_thumbnails/dendritic.png",
-    "tags": ["software"],
-    "description": "Placeholder: a short one or two sentence summary of what this project does and why it matters."
+    "tags": ["rust", "optimization", "ndarray", "autodiff"],
+    "description": "Lightweight and extensible optimization library. Includes first order optimization with multi variate/vector valued functions."
   }
 ]
