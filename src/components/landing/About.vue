@@ -9,7 +9,7 @@
             <h1> About Me </h1>
           </div>
           <div class="flex shrink-0 sm:w-64">
-             <GnButton :disabled="false" variant="ghost" color="var(--app-color-accent)" @gn-click="router.push('/projects')">
+             <GnButton :disabled="false" variant="ghost" color="var(--app-color-accent)" @gn-click="router.push('/career')">
               <span class="view-projects-label">
                 View Career
                 <FontAwesomeIcon :icon="faArrowRight" />
